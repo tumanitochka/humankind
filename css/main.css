@@ -76,7 +76,16 @@ header a {
     font-style: normal;
     font-weight: 400;
     line-height: 48px; /* 300% */
+}
+
+a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: text-decoration 2s ease;
+    flex-direction: column;
 }
 
 .navLeft {
@@ -166,29 +175,66 @@ main {
 .perform {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 25px;
     margin-top: 107px;
 }
 
+.item:hover button {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease-in-out;
+}
+
 .item:nth-child(1) {
-    background: url(../css/img/perform/01.jpeg), lightgray 50% / cover no-repeat;
+    background: lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/01.jpeg);
     background-size: contain;
+}
+
+.item:nth-child(1):hover {
+    background: lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/13.jpeg);
+    background-size: contain;
+    transition: background-image 0.5s ease;
 }
 
 .item:nth-child(2) {
-    background: url(../css/img/perform/02.jpeg), lightgray 50% / cover no-repeat;
+    background: lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/02.jpeg);
     background-size: contain;
+}
+
+.item:nth-child(2):hover {
+    background: lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/14.jpeg);
+    background-size: contain;
+    transition: background-image 0.5s ease;
 }
 
 .item:nth-child(3) {
-    background: url(../css/img/perform/03.jpeg), lightgray 50% / cover no-repeat;
+    background: lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/03.jpeg);
     background-size: contain;
 }
 
-.item:nth-child(4) {
-    background: url(../css/img/perform/04.jpeg), lightgray 50% / cover no-repeat;
+.item:nth-child(3):hover {
+    background: lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/15.jpeg);
     background-size: contain;
+    transition: background-image 0.5s ease;
+}
+
+.item:nth-child(4) {
+    background: lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/04.jpeg);
+    background-size: contain;
+}
+
+.item:nth-child(4):hover {
+    background: lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/16.jpeg);
+    background-size: contain;
+    transition: background-image 0.5s ease;
 }
 
 .item {
@@ -197,8 +243,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
-
 .item h2 {
     color: #fff;
 }
@@ -228,7 +274,7 @@ main {
 .article {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 25px;
     margin-top: 107px;
     margin-bottom: 22px;
@@ -306,23 +352,55 @@ main {
 }
 
 .two:nth-child(1) {
-    background: url(../css/img/perform/08.jpeg) center, lightgray 50% / cover no-repeat;
+    background: center, lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/08.jpeg);
     background-size: contain;
+}
+
+.two:nth-child(1):hover {
+    background: center, lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/17.jpeg);
+    background-size: contain;
+    transition: background-image 0.5s ease;
 }
 
 .two:nth-child(2) {
-    background: url(../css/img/perform/09.jpeg) center, lightgray 50% / cover no-repeat;
+    background: center, lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/09.jpeg);
     background-size: contain;
+}
+
+.two:nth-child(2):hover {
+    background: center, lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/18.jpeg);
+    background-size: contain;
+    transition: background-image 0.5s ease;
 }
 
 .two:nth-child(3) {
-    background: url(../css/img/perform/10.jpeg) center, lightgray 50% / cover no-repeat;
+    background: center, lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/10.jpeg);
     background-size: contain;
 }
 
-.two:nth-child(4) {
-    background: url(../css/img/perform/11.jpeg) center, lightgray 50% / cover no-repeat;
+.two:nth-child(3):hover {
+    background: center, lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/19.jpeg);
     background-size: contain;
+    transition: background-image 0.5s ease;
+}
+
+.two:nth-child(4) {
+    background: center, lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/11.jpeg);
+    background-size: contain;
+}
+
+.two:nth-child(4):hover {
+    background: center, lightgray 50% / cover no-repeat;
+    background-image: url(../css/img/perform/20.jpeg);
+    background-size: contain;
+    transition: background-image 0.5s ease;
 }
 
 .work {
