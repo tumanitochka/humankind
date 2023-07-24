@@ -438,6 +438,13 @@ main {
     font-weight: 400;
     line-height: 52px; /* 288.889% */
     letter-spacing: 0.4px;
+    cursor: pointer;
+}
+
+.foot button:hover {
+    background-color: #006450;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 footer {
@@ -445,12 +452,15 @@ footer {
     height: 263px;
     margin: auto;
     margin-top: 20px;
+    
 }
 
 .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 20px;
+    gap: 200px;
 }
 
 .footItem {
@@ -467,11 +477,14 @@ footer {
     color: #006450;
     font-family: Roboto;
     font-size: 15px;
-    font-style: italic;
+    font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 133.333% */
     letter-spacing: 0.4px;
-    text-decoration: none;
+}
+
+.footItem a:hover {
+    text-decoration: underline;
 }
 
 .copy {
@@ -500,5 +513,309 @@ footer {
 
 .copyRight {
     display: flex;
-    gap: 90px;  
+    gap: 40px;  
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuIcon {
+    border: 1px solid #00C08B;
+    color: #00C08B;
+    padding: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+section.burger {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        width: 768px;
+    }
+
+    .navLeft {
+        gap: 15px;
+    }
+
+    .navRight {
+        gap: 15px;
+    }
+
+    main {
+        width: 768px;
+    }
+
+    hr {
+        width: 758px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 54px;
+    }
+
+    .firstScreen {
+        background-position: center;
+    }
+
+    .perform {
+        gap: 10px;
+    }
+
+    #perform h2 {
+        width: 520px;
+    }
+
+    .item {
+        width: 683px;
+        height: 683px;
+    }
+
+    .item p {
+        font-size: 18px;
+        width: 388px;
+        margin-top: 0;
+    }
+
+    .item button {
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .article {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .articleItem {
+        width: 480px;
+        height: auto;
+        flex-direction: row;
+        margin-top: inherit;
+    }
+
+    .sectionSlider h3 {
+        width: auto;
+    }
+
+    .foot {
+        width: 768px;
+        background-size: cover;
+    }
+
+    .footer {
+        gap: 119px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 768px;
+        height: 200px;
+    }
+
+    .copy {
+        width: 758px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        width: 1024px;
+    }
+
+    main {
+        width: 1024px;
+    }
+
+    hr {
+        width: 1014px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 54px;
+    }
+
+    .firstScreen {
+        background-position: center;
+    }
+
+    .perform {
+        gap: 10px;
+    }
+
+    #perform h2 {
+        width: 520px;
+    }
+
+    .item {
+        width: 480px;
+        height: 480px;
+    }
+
+    .item button {
+        width: 480px;
+        margin-top: 31%;
+    }
+
+    .articleItem {
+        /* width: 480px;
+        height: 480px; */
+    }
+
+    .foot {
+        width: 1024px;
+        background-size: cover;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1024px;
+        height: 200px;
+    }
+
+    .copy {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    header {
+        width: 480px;
+        justify-content: space-between;
+    }
+
+    .navLeft {
+        display: none;
+    }
+
+    .navRight {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    main {
+        width: 480px;
+    }
+
+    hr {
+        width: 470px;
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 54px;
+    }
+
+    .label button {
+        width: 128px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider {
+        margin: 580px 23px 0 0;
+        float: right;
+    }
+
+    .firstScreen {
+        background-position: center;
+    }
+
+    .perform {
+        gap: 10px;
+    }
+
+    #perform h2 {
+        width: 520px;
+    }
+
+    .item {
+        width: 480px;
+        height: 480px;
+    }
+
+    .item p {
+        font-size: 18px;
+        width: 388px;
+        margin-top: 0;
+    }
+
+    .item button {
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .article {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .articleItem {
+        width: 480px;
+        height: auto;
+        flex-direction: row;
+        margin-top: inherit;
+    }
+
+    .sectionSlider h3 {
+        width: auto;
+    }
+
+    .foot {
+        width: 480px;
+        background-size: cover;
+    }
+
+    .footer {
+        gap: 119px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 480px;
+        height: 200px;
+    }
+
+    .copy {
+        width: 470px;
+    }
 }
