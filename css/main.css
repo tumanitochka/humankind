@@ -853,3 +853,161 @@ section {display: none;}
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navLeft {
+        display: none;
+    }
+
+    .navRight {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    hr {
+        width: 310px;
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .label button {
+        width: 128px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    .slider {
+        margin: 580px 23px 0 0;
+        float: right;
+    }
+
+    .firstScreen {
+        background-position: center;
+        height: 500px;
+    }
+
+    #perform {
+        margin: auto;
+    }
+
+    .perform {
+        gap: 10px;
+    }
+
+    #perform h2 {
+        width: 100%;
+    }
+
+    .item {
+        width: 320px;
+        height: 320px;
+    }
+
+    .item p {
+        font-size: 18px;
+        width: 388px;
+        margin-top: 0;
+    }
+
+    .item button {
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .article {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .articleItem {
+        width: 320px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: inherit;
+    }
+
+    .articleItem img {
+        width: 320px;
+        height: auto;
+    }
+
+    .sectionSlider h3 {
+        width: auto;
+    }
+
+    .foot {
+        width: 320px;
+        background-size: cover;
+    }
+
+    .footer {
+        gap: 40px;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        width: 320px;
+        height: 200px;
+    }
+    
+    .footItem {
+        width: 120px;
+    }
+
+    .copy {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyRight {
+        display: none;
+    }
+
+    .copy .logo {
+        display: none;
+    }
+
+    .work h4 {
+        width: auto;
+    }
+}
