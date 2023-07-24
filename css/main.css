@@ -977,6 +977,7 @@ section {display: none;}
         width: 320px;
         height: 500px;
         background-size: cover;
+        margin: auto;
     }
 
     .footer {
