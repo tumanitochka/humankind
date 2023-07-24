@@ -516,24 +516,177 @@ footer {
     gap: 40px;  
 }
 
-.burger {
-    display: flex;
-    flex-direction: column;
-}
-
 .menuIcon {
-    border: 1px solid #00C08B;
+    display: none;
     color: #00C08B;
     padding: 2px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-section.burger {
-    display: none;
+.menuIcon img {
+    width: 30px;
 }
 
-@media screen and (min-width: 768px) {
+.menuIcon img:hover {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease;
+}
+
+section {display: none;}
+
+.menuIcon:active section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 55px;
+    height: 100vh;
+    background-color: #FFFAEF;
+    width: 480px;
+    z-index: 1;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    header {
+        width: 480px;
+        justify-content: space-between;
+    }
+
+    .navLeft {
+        display: none;
+    }
+
+    .navRight {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    main {
+        width: 480px;
+    }
+
+    hr {
+        width: 470px;
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 54px;
+    }
+
+    .label button {
+        width: 128px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider {
+        margin: 580px 23px 0 0;
+        float: right;
+    }
+
+    .firstScreen {
+        background-position: center;
+    }
+
+    .perform {
+        gap: 10px;
+    }
+
+    #perform h2 {
+        width: 520px;
+    }
+
+    .item {
+        width: 480px;
+        height: 480px;
+    }
+
+    .item p {
+        font-size: 18px;
+        width: 388px;
+        margin-top: 0;
+    }
+
+    .item button {
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .article {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .articleItem {
+        width: 480px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: inherit;
+    }
+
+    .sectionSlider h3 {
+        width: auto;
+    }
+
+    .foot {
+        width: 480px;
+        background-size: cover;
+    }
+
+    .footer {
+        gap: 119px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 480px;
+        height: 200px;
+    }
+
+    .copy {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyRight {
+        display: none;
+    }
+
+    .copy .logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     header {
         width: 768px;
     }
@@ -634,7 +787,7 @@ section.burger {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
     header {
         width: 1024px;
     }
@@ -700,122 +853,3 @@ section.burger {
     }
 }
 
-@media screen and (min-width: 480px) {
-    header {
-        width: 480px;
-        justify-content: space-between;
-    }
-
-    .navLeft {
-        display: none;
-    }
-
-    .navRight {
-        display: none;
-    }
-
-    .logo {
-        padding-left: 10px;
-    }
-
-    main {
-        width: 480px;
-    }
-
-    hr {
-        width: 470px;
-    }
-
-    h1 {
-        font-size: 18px;
-        line-height: 27px;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    h4 {
-        font-size: 54px;
-    }
-
-    .label button {
-        width: 128px;
-        height: 38px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .slider {
-        margin: 580px 23px 0 0;
-        float: right;
-    }
-
-    .firstScreen {
-        background-position: center;
-    }
-
-    .perform {
-        gap: 10px;
-    }
-
-    #perform h2 {
-        width: 520px;
-    }
-
-    .item {
-        width: 480px;
-        height: 480px;
-    }
-
-    .item p {
-        font-size: 18px;
-        width: 388px;
-        margin-top: 0;
-    }
-
-    .item button {
-        width: 100%;
-        margin-top: auto;
-    }
-
-    .article {
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-        flex-wrap: nowrap;
-    }
-    
-    .articleItem {
-        width: 480px;
-        height: auto;
-        flex-direction: row;
-        margin-top: inherit;
-    }
-
-    .sectionSlider h3 {
-        width: auto;
-    }
-
-    .foot {
-        width: 480px;
-        background-size: cover;
-    }
-
-    .footer {
-        gap: 119px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 480px;
-        height: 200px;
-    }
-
-    .copy {
-        width: 470px;
-    }
-}
