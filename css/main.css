@@ -910,8 +910,10 @@ section {display: none;}
     }
 
     .slider {
-        margin: 580px 23px 0 0;
-        float: right;
+        margin-top: 0;
+        position: absolute;
+        bottom: 120px;
+        right: 0;
     }
 
     .firstScreen {
