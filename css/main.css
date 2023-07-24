@@ -884,8 +884,8 @@ section {display: none;}
     }
 
     h1 {
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 14px;
+        line-height: 23px;
     }
 
     h2 {
@@ -938,7 +938,7 @@ section {display: none;}
 
     .item p {
         font-size: 18px;
-        width: 388px;
+        width: 320px;
         margin-top: 0;
     }
 
@@ -973,6 +973,7 @@ section {display: none;}
 
     .foot {
         width: 320px;
+        height: 500px;
         background-size: cover;
     }
 
@@ -985,7 +986,7 @@ section {display: none;}
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
-        padding: 0 20px;
+        padding: auto;
         width: 320px;
         height: 200px;
     }
@@ -997,6 +998,7 @@ section {display: none;}
     .copy {
         display: flex;
         justify-content: center;
+        width: 320px;
     }
 
     .copyRight {
